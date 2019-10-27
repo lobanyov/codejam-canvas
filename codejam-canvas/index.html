@@ -4,9 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
   <title>Codejam Canvas</title>
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <header class="menu">
+      <button class="nav-btn"><img src="assets/images/nav-logo.svg" alt="navigation" width="18"></button>
+      <h1 class="menu__heading">CodeJam - Pallete</h1>
+      <button class="menu__toggle-btn"><img src="assets/images/toggle-logo.svg" alt="toggle" width="4"></button>
+    </header>
+
+    <main class="interaction-area">
+      <div class="interaction-area__toolbar-zone toolbar-zone">
+        <ul class="toolbar-zone__toolbar toolbar">
+          <li class="toolbar__item">
+            <img class="toolbar__img" src="assets/images/fill-drip-logo.svg" alt="fill-drip" width="20">
+            <span class="toolbar__span">Paint bucket</span>
+          </li>
+          <li class="toolbar__item">
+            <img class="toolbar__img" src="assets/images/eye-dropper-logo.svg" alt="eye-dropper" width="20">
+            <span class="toolbar__span">Choose color</span>
+          </li>
+          <li class="toolbar__item">
+            <img class="toolbar__img" src="assets/images/arrows-alt-logo.svg" alt="eye-dropper" width="20">
+            <span class="toolbar__span">Move</span>
+          </li>
+          <li class="toolbar__item">
+            <img class="toolbar__img" src="assets/images/exchange-alt-logo.svg" alt="eye-dropper" width="20">
+            <span class="toolbar__span">Transform</span>
+          </li>
+        </ul>
+
+        <ul class="toolbar-zone__colorbar colorbar">
+          <li class="colorbar__item">
+           <div class="colorbar__circle"></div>  
+            <span class="colorbar__span">Current color</span>
+          </li>
+          <li class="colorbar__item">
+            <div class="colorbar__circle"></div> 
+            <span class="colorbar__span">Prev color</span>
+          </li>
+          <li class="colorbar__item">
+            <div class="colorbar__circle"></div>
+            <span class="colorbar__span">red</span>
+          </li>
+          <li class="colorbar__item">
+            <div class="colorbar__circle"></div>
+            <span class="colorbar__span">blue</span>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+
+    <footer class="footer"><h2 class="footer__heading">RSSchool Q3</h2></footer>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
