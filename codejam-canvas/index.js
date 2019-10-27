@@ -49,6 +49,7 @@ let drawImage = async () => {
     img.src = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/image.png';
 
     img.onload = () => {
+      ctx.imageSmoothingEnabled = false;
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     }
   } catch(e) {
